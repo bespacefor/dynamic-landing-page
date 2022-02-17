@@ -5,6 +5,7 @@ body {
     font-family: 'New Tegomin', Georgia, 'Times New Roman', Times, serif;
     color: black;
 }
+
 .header_visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -12,6 +13,7 @@ body {
     height: 1px;
     margin: -1px;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -20,21 +22,65 @@ body {
     text-align: center;
     height: 100vh;
 }
+
 #time {
     font-size: 6rem;
 }
+
 h2 {
     font-size: 2rem;
     opacity: 0.8;
 }
+
 #focus {
     background-color: grey;
 }
+
 #quote {
     margin-top: 5rem;
 }
+
 .footer__content {
     position: absolute;
     bottom: 3%;
     right: 3%;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    #time {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #quote {
+        margin-top: 6rem;
+    }
+    .footer__content {
+        bottom: 1%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+    #time {
+        font-size: 3rem;
+    }
+    h2, h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #time {
+        font-size: 1.5rem;
+    }
+    h2, h3 {
+        font-size: 0.9rem;
+    }
+    #quote {
+        font-size: 0.8rem;
+    }
+    .footer__content {
+       display: none;
+    }
 }
