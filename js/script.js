@@ -22,16 +22,16 @@ function changeBgGreet() {
     let hour = today.getHours();
 
     if (hour >= 6 && hour < 12) {
-        document.body.style.backgroundImage = "url('../assets/img/1.jpg')";
+        document.body.style.backgroundImage = "url('./assets/img/1.jpg')";
         greeting.innerHTML = 'Good Morning, ';
     } else if (hour >= 12 && hour < 18) {
-        document.body.style.backgroundImage = "url('../assets/img/2.jpg')";
+        document.body.style.backgroundImage = "url('./assets/img/2.jpg')";
         greeting.innerHTML = 'Good Afternoon, ';
     } else if (hour >= 18 && hour < 23) {
-        document.body.style.backgroundImage = "url('../assets/img/3.jpg')";
+        document.body.style.backgroundImage = "url('./assets/img/3.jpg')";
         greeting.innerHTML = 'Good Evening, ';
     } else {
-        document.body.style.backgroundImage = "url('../assets/img/4.jpg')";
+        document.body.style.backgroundImage = "url('./assets/img/4.jpg')";
         greeting.innerHTML = 'Good Night, ';
     };
 };
